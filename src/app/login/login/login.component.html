@@ -1,0 +1,58 @@
+
+
+<div id="home" style="margin-top: 100px">
+  <div id="wrapper">
+    <!--__--__--__--__--  M A I N   C O N T E N T  --__--__--__--___--__--__-->
+    <section>
+      <div class="line">
+        <div class="dline"></div>
+        <h1 style="color:#54d400; margin-left: 30px">Acceder</h1>
+        <div class="dline"></div>
+
+
+
+        <div class="container">
+          <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info" >
+
+              <div style="padding-top:30px" class="panel-body" >
+
+                <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                <form id="loginform" class="form-horizontal" role="form">
+
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input [(ngModel)]="user.nombre" id="login-username" type="text" class="form-control" name="username" value="" placeholder="username">
+                  </div>
+
+                  <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input [(ngModel)]="user.password" id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                  </div>
+
+                  <div style="margin-top:10px" class="form-group">
+                    <!-- Button -->
+
+                    <span style="color: white">{{errorMsg}}</span>
+                    <div class="col-sm-12 controls">
+                      <button (click)="login()" type="submit" class="btn-lg" style="background-color:#54d400; color:white">Login</button>
+
+                    </div>
+                  </div>
+
+
+                </form>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+</div>
