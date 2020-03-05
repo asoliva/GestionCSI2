@@ -1,0 +1,30 @@
+<div id="home" style="margin-top: 100px">
+  <div id="wrapper">
+    <!--__--__--__--__--  M A I N   C O N T E N T  --__--__--__--___--__--__-->
+    <section>
+      <div class="line">
+        <div class="dline"></div>
+        <h1 style="color:#54d400; margin-left: 30px">Lista de Alumnos</h1>
+        <div class="dline"></div>
+        <div class="container">
+          <table class="table table-dark">
+            <thead>
+            <tr>
+              <th scope="col">Alumnos CSI-2</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let al of alumnos">
+              <td>{{al.Nombre + " " + al.Apellidos}}</td>
+            </tr>
+            </tbody>
+          </table>
+        <a routerLink="/admin" href="login">Volver</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
