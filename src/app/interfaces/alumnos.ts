@@ -1,7 +1,8 @@
 export interface Alumnos {
   Nombre: string,
   Apellidos: string,
-  FechaNacimiento: string,
+  fechaNacimiento: string,
+  Equipo: string,
   Edad: number,
-  Email: string
+  Seleccionado: boolean
 }

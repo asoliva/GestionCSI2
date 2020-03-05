@@ -13,6 +13,12 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
   {path: '',
     loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)},
+  {path: '',
+    loadChildren: () => import('./parte/parte.module').then(m => m.ParteModule)},
+  {path: '',
+    loadChildren: () => import('./lista/lista.module').then(m => m.ListaModule)},
+  {path: '',
+    loadChildren: () => import('./lista-faltas/lista-faltas.module').then(m => m.ListaFaltasModule)},
 ];
 
 @NgModule({

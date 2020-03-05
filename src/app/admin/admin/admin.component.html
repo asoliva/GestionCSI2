@@ -21,6 +21,7 @@
               <div class="p-2" style="width: 70px; height: 70px;"></div>
               <div class="p-2 bg-light bordeF" (click)="open(content, numero = 3)">4</div>
               <div class="p-2 bg-light bordeF" (click)="open(content, numero = 4)">5</div>
+              <button class="btn-lg btn-primary p-2" type="button" style="margin-left: 150px; height: 60px; width: 180px; cursor: pointer" routerLink="/parte">Parte de Clase</button>
             </div>
 
             <div class="d-flex p-3 text-white">
@@ -28,26 +29,28 @@
               <div class="p-2 bg-light bordeF" (click)="open(content, numero = 6)">7</div>
               <div class="p-2 bg-light bordeF" (click)="open(content, numero = 7)">8</div>
               <div class="p-2" style="width: 70px; height: 70px;"></div>
-              <div class="p-2 bg-light bordeF">9</div>
-              <div class="p-2 bg-light bordeF">10</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 8)">9 </div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 9)">10</div>
+              <button class="btn-lg btn-primary p-2" style="margin-left: 150px; height: 60px; width: 180px; cursor: pointer" routerLink="/lista">Alumnos</button>
             </div>
 
             <div class="d-flex p-3 text-white">
-              <div class="p-2 bg-light bordeF">11</div>
-              <div class="p-2 bg-light bordeF">12</div>
-              <div class="p-2 bg-light bordeF">13</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 10)">11</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 11)">12</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 12)">13</div>
               <div class="p-2 " style="width: 70px; height: 70px;"></div>
-              <div class="p-2 bg-light bordeF">14</div>
-              <div class="p-2 bg-light bordeF">15</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 13)">14</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 14)">15</div>
+              <button class="btn-lg btn-primary p-2" style="margin-left: 150px; height: 60px; width: 180px; cursor: pointer" routerLink="/listaFaltas">Lista de Faltas</button>
             </div>
 
             <div class="d-flex p-3 text-white">
-              <div class="p-2 bg-light bordeF">16</div>
-              <div class="p-2 bg-light bordeF">17</div>
-              <div class="p-2 bg-light bordeF">18</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 15)">16</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 16)">17</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 17)">18</div>
               <div class="p-2 " style="width: 70px; height: 70px;"></div>
               <div class="p-2 bg-light bordeF">19</div>
-              <div class="p-2 bg-light bordeF">20</div>
+              <div class="p-2 bg-light bordeF" (click)="open(content, numero = 18)">20</div>
             </div>
 
             <div class="d-flex p-3 text-white">
@@ -72,8 +75,7 @@
   <div class="modal-body">
     <p><strong>Nombre:</strong> {{alumnos[numero].Nombre}}</p>
     <p><strong>Apellidos:</strong> {{alumnos[numero].Apellidos}}</p>
-    <p><strong>Edad:</strong> {{alumnos[numero].Edad}}</p>
-    <p><strong>Email:</strong> {{alumnos[numero].Email}}</p>
+    <p><strong>Fecha de Nacimiento:</strong> {{alumnos[numero].fechaNacimiento.seconds * 1000 | date:'dd/MM/yyyy'}}</p>
     <p><strong>Equipo:</strong> {{alumnos[numero].Equipo}}</p>
   </div>
   <div class="modal-footer">

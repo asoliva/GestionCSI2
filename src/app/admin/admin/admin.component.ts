@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginServiceService} from "../../login/login/login-service.service";
 import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {Alumnos} from "./alumnos";
+import {Alumnos} from "../../interfaces/alumnos";
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-import {AlumnosService} from "./alumnos.service";
+import {AlumnosService} from "../../services/alumnos.service";
 
 @Component({
   selector: 'app-admin',
